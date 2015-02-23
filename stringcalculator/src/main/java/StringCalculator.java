@@ -9,5 +9,11 @@
  * @author Gábor
  */
 public class StringCalculator {
-    
+    int add(String numbers)
+    {
+        int osszeg = 0;
+        if(numbers.isEmpty())
+            osszeg=0;
+        return osszeg;
+    }
 }
