@@ -14,6 +14,8 @@ public class StringCalculator {
         int osszeg = 0;
         if(numbers.isEmpty())
             osszeg=0;
+        else
+            osszeg=Integer.parseInt(numbers);
         return osszeg;
     }
 }
