@@ -15,7 +15,12 @@ public class StringCalculator {
         if(numbers.isEmpty())
             osszeg=0;
         else
-            osszeg=Integer.parseInt(numbers);
+        {
+            String[] szamok=numbers.split(",");
+            for (String szamok1 : szamok) {
+                osszeg+=Integer.parseInt(szamok1);
+            }
+        }
         return osszeg;
     }
 }
